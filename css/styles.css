@@ -448,7 +448,8 @@ header {
 .footer-links-btn {
     fill: var(--cloud);
 }
-.footer-box-text {
+.footer-box-text,
+.email-title {
     color: var(--primary-white-color);
     font-size: 16px;
     font-weight: 500;
@@ -459,6 +460,54 @@ header {
 .footer-social-item {
     width: 40px;
     height: 40px;
+}.footer-second-box {
+    margin-right: 80px;
+}
+
+.input-email {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    line-height: 2.0;
+    letter-spacing: 0.04em;
+    background-color: #2E2F42;
+    /* position: absolute; */
+    padding-left: 16px;
+}
+
+.input-email::placeholder {
+    color: #FFF;
+}
+.input-tel-box {
+    display: flex;
+}
+.subscribe-btn {
+    background: var(--iris, #4D5AE5);
+    display: inline-flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 4px;
+    border: hidden;
+    width: 165px;
+    height: 40px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-left: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    gap: 16px;
+font-size: 16px;
+
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+}
+.subscribe-btn .icon {
+    fill: #FFFFFF;
 }
 
 /* portfolio */
@@ -687,7 +736,7 @@ header {
     top: 50%;
     left: 16px;
 }
-input::placeholder {
+.form-input-comment::placeholder {
     color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
     font-size: 12px;
     font-weight: 400;
@@ -712,9 +761,8 @@ input::placeholder {
 }
 .submit-btn {
     margin-top: 24px;
-    display: flex;
-    direction: column;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-button {
@@ -736,10 +784,47 @@ input::placeholder {
 .form-button:focus {
     background-color: var(--pressed-state-color);
 }
+.checkbox-box {
+    display: flex;
+    justify-content: center;
+}
 .checkbox-text {
-    color: var(--iris, #4D5AE5);
+    color: #8E8F99;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.48px;
-
 }
+.checkbox-box a {
+    color: #4D5AE5;
+}
+
+.box-btn-text {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.checkbox-btn {
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-btn:active {
+    border: none;
+    
+}
+.modal .icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+}
+.checkbox-btn:hover .icon,
+.checkbox-btn:focus .icon {
+    fill: var(--pressed-state-color);
+}
+
