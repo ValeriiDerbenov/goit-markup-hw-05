@@ -849,7 +849,7 @@ header {
 .checkbox-btn:active {
     border: none;    
 }
-.box-btn-text input[type="checkbox"]:checked {
+.box-btn-text input[type="checkbox"]:checked + .checkbox-box {
     background-color: var(--pressed-state-color);
     border: none;
     fill: var(--cloud);
