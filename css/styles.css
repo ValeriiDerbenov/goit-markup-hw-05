@@ -832,13 +832,6 @@ header {
     line-height: 1.17;
     letter-spacing: 0.04em; 
 }
-.checkbox-box .checkbox-link {
-    color: var(--primary-brand-color);
-}
-.checkbox-input:checked {
-    background-color: var(--pressed-state-color);
-    border: none;
-    fill: var(--cloud);}   
 
 .checkbox-btn {
     padding: 0;
@@ -863,4 +856,15 @@ header {
 .checkbox-box:focus + .checkbox-icon {
     fill: var(--pressed-state-color);
 }
+.checkbox-input:checked + span {
+    background-color: var(--pressed-state-color);
+    border: none;
+    fill: var(--cloud);
+}   
+
+.checkbox-link {
+    color: var(--primary-brand-color);
+}
+    
+
 
