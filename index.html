@@ -350,9 +350,9 @@
                 <div class="footer-email-section">
                     <p class="email-title">Subscribe</p>
                     <form class="input-email-box">
-                        <label for="contact-email" class="email-label"></label>
+                        <label class="email-label">
                             <input class="input-email" type="email" name="contact-email" id="contact-email" placeholder="E-mail"> 
-                            
+                        </label>   
                         <button class="subscribe-btn" type="submit">
                             Subscribe
                             <svg class="icon" width="24" height="24">
@@ -367,7 +367,12 @@
 
 <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
-        <div data-modal class="modal">            
+        <div class="modal">   
+            <button data-modal-close class="modal-button" type="button">
+                <svg class="icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>         
             <p class="modal-title">Leave your contacts and we will call you back</p>
                 <!-- form -->
             <form class="form" name="report-form" autocomplete="off">
@@ -422,11 +427,6 @@
                     </div>                   
                     <button class="form-button" type="submit">Send</button>
                 </form>    
-            <button data-modal-close class="modal-button" type="button">
-                <svg class="icon" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close-black"></use>
-                </svg>
-            </button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
