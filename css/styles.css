@@ -825,7 +825,7 @@ header {
     color: var(--helper-text-color);
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 1.17;
+    line-height: 1.17;
     letter-spacing: 0.04em; 
 }
 .checkbox-box a {
