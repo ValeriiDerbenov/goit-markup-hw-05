@@ -856,7 +856,3 @@ input[type="checkbox"]:checked + .checkbox-text .checkbox-box {
   border: none;
   fill: var(--cloud);  
 }
-input[type="checkbox"]:checked + .checkbox-text .checkbox-icon {
-  width: 16px;
-  height: 16px;
-}
